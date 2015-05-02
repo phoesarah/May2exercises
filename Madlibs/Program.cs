@@ -12,62 +12,66 @@ namespace Madlibs
         //enter a story number to do another, or enter a negative number to end the program.
         static void Main(string[] args)
         {
-            Console.WriteLine("Which story would you like to do? please enter 1, 2 or 3, if you don't want to do a story, please enter a negative number");
-            int input = Convert.ToInt32(Console.ReadLine());
+            int input = 1;
             while (input > 0)
             {
-                Console.WriteLine("Which story would you like to do? please enter 1, 2 or 3, if you don't want to do a story, please enter a negative number");
-                
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("Which story would you like to hear? please enter 1, 2 or 3, if you don't want to hear a story, please enter a negative number");
+                input = Convert.ToInt32(Console.ReadLine());
+
                 switch (input)
                 {
                     case 1:
-                        Console.Write("Please enter a proper Noun:");
+                        Console.Write("Please enter a proper noun: ");
                         string a = Console.ReadLine();
-                        Console.Write("Please enter a noun:");
+                        Console.Write("Please enter a noun: ");
                         string b = Console.ReadLine();
-                        Console.Write("Please enter a feeling:");
+                        Console.Write("Please enter a feeling: ");
                         string c = Console.ReadLine();
-                        Console.Write("Please enter a verb in past tense:");
-                        string d = Console.ReadLine();
-                        Console.Write("Please enter a noun:");
+                        Console.Write("Please enter a verb in past tense: ");
+                        string d = Console.ReadLine();                        
+                        Console.Write("Please enter a sentence: ");
+                        string z = Console.ReadLine();
+                        Console.Write("Please enter a noun: ");
                         string e = Console.ReadLine();
-                         Console.Write("Please enter a verb in past tense:");
+                         Console.Write("Please enter a verb in past tense: ");
                         string f = Console.ReadLine();
-                        Console.WriteLine("one day " + a + " was walking down the street and saw a " + b  + " this made them feel " + c + " so they " + d + " to the nearest " + e + " and " + f );
+                        Console.WriteLine("One day " + a + " was walking down the street and saw a " + b  + ", to which they exclaimed: " + z + "! " + "They felt " + c + " so they " + d + " to the nearest " + e + " and " + f + "." );
                         Console.ReadLine();
                        break;
                     case 2:
-                       Console.Write("Please enter a proper Noun:");
+                       Console.Write("Please enter a proper noun: ");
                         string g = Console.ReadLine();
-                        Console.Write("Please enter a place:");
+                        Console.Write("Please enter a place: ");
                         string h = Console.ReadLine();
-                        Console.Write("Please enter a noun:");
+                        Console.Write("Please enter a noun: ");
                         string i = Console.ReadLine();
-                        Console.Write("Please enter a verb:");
+                        Console.Write("Please enter a verb: ");
                         string j = Console.ReadLine();
-                        Console.Write("Please enter a different verb:");
+                        Console.Write("Please enter a different verb: ");
                         string k = Console.ReadLine();
-                         Console.Write("Please enter a feeling:");
+                         Console.Write("Please enter a feeling: ");
                         string l = Console.ReadLine();
-                       Console.WriteLine( g + " went to the " + h + " to get a  " + i + " so they can " + j + " without having to " + k + " this made them feel" + l);
+                       Console.WriteLine( g + " went to the " + h + " to get a " + i + " so they can " + j + " without having to " + k + " this made them feel " + l + ".");
                        break;
                     case 3:
-                        Console.Write("Please enter a feeling:");
+                        Console.Write("Please enter a feeling: ");
                         string m = Console.ReadLine();
-                        Console.Write("Please enter a verb:");
+                        Console.Write("Please enter a verb: ");
                         string n = Console.ReadLine();
-                        Console.Write("Please enter another verb:");
+                        Console.Write("Please enter another verb: ");
                         string o = Console.ReadLine();
-                        Console.Write("Please enter a job title:");
+                        Console.Write("Please enter a job title: ");
                         string p = Console.ReadLine();
-                        Console.Write("Please enter a different verb:");
+                        Console.Write("Please enter a different verb: ");
                         string q = Console.ReadLine();
-                         Console.Write("Please enter an animal:");
+                         Console.Write("Please enter an animal: ");
                         string r = Console.ReadLine();
-                       Console.WriteLine( "When I feel " + m + " I like to " + n + " until I " + o + ".  That way, when the " + p + " comes to my house.  He won't " + q + "  on my pet " + r);
+                       Console.WriteLine( "When I feel " + m + ", I like to " + n + " until I " + o + ".  That way, when the " + p + " comes to my house.  He won't " + q + "  on my pet " + r + ".");
                        break;
                     default:
-                       Console.WriteLine("Please Enter 1 2 or 3");
+                       Console.WriteLine("Please Enter 1, 2, or 3");
                        break;
 
                 }
