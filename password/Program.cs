@@ -11,6 +11,16 @@ namespace password
         //based on the int value of each letter in the word. For checking your answers, the password "Welcome" evaluates to the integer 716.
         static void Main(string[] args)
         {
+            Console.WriteLine("Please enter a password");
+            string password = Console.ReadLine();
+            int sum = 0;
+            for (int i = 0; i < password.Length; i++)
+			{
+                sum += password[i];
+			 }                  
+                           
+            Console.WriteLine(Convert.ToString(sum));
+            Console.ReadLine();
         }
     }
 }
