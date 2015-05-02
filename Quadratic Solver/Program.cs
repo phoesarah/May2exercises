@@ -17,26 +17,24 @@ namespace Quadratic_Solver
             double A = Convert.ToInt32(Console.ReadLine());
             double B = Convert.ToInt32(Console.ReadLine());
             double C = Convert.ToInt32(Console.ReadLine());
-           Console.WriteLine(Convert.ToString(Quadratic(A, B, C)));
-            
+           Console.WriteLine("Your answer is either " + Convert.ToString(Quadratic1(A, B, C)));
+           Console.WriteLine(" or " + Convert.ToString(Quadratic2(A, B, C)));
             Console.ReadLine();
         }
-        static double Quadratic(double A, double B, double C)
+        static double Quadratic1(double A, double B, double C)
         {
-            double result = 0;
-            for (int i = 0; i < C; i++)
-            {
-                for (int d = 0; d < C; d++)
-                {
-                    if ((d + i) == B && (d * i) == C)
-                    {
-                        result = d;
-                    }
-                                      
-                }
-                
-            }
+            double system = ((B * B) - (4*A*C));
+            double result = ((-B) +  Math.Sqrt(system))/(2 *A);
+             return result;
+        }
+        static double Quadratic2(double A, double B, double C)
+        {
+            double system = ((B * B) - (4 * A * C));
+            double result = ((-B) - Math.Sqrt(system))/(2 * A);
             return result;
         }
-    }
-}
+     }
+            
+ }
+    
+
